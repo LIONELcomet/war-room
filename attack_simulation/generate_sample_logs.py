@@ -1,14 +1,14 @@
 import json
 import time
 import os
-from datetime import datetime
+import datetime
 import threading
 
 TELEMETRY_FILE = "backend/telemetry.log"
 
 def write_event(event_type, details):
     event = {
-        "timestamp": datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+        "timestamp": datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
         "component": "TELEMETRY",
         "event_type": event_type,
     }

